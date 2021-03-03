@@ -1,0 +1,18 @@
+[package]
+name = "num-fmt-delimited"
+version = "0.1.0"
+authors = ["mexus <gilaldpellaeon@gmail.com>"]
+edition = "2018"
+description = "Format numbers with delimiters"
+keywords = ["format", "nostd"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Ha-ha, no deps!
+
+[features]
+default = ["128bit"]
+
+# Activates implementation of some traits for u128/i128 types.
+128bit = []
