@@ -1,5 +1,5 @@
 //! Format numbers with delimiters, but without allocations or even the standard
-//! library (`#![no_std]`).
+//! library itself, `#![no_std]` mode one!
 //!
 //! ```rust
 //! use num_fmt_delimited::{two, three, four};
@@ -19,8 +19,9 @@
 //! assert_eq!(two::with_delimiter(12345, "-_-").to_string(), "1-_-23-_-45");
 //! ```
 //!
-//! While marker types for [Two], [Three] and [Four] are pre-implemented, you
-//! can always go with your own number of digits to group by:
+//! While marker types for groups of 2, 3 and 4 digits are pre-implemented
+//! ([Two], [Three] and [Four] respectively), you can always go with your own
+//! number of digits to group by:
 //!
 //! ```rust
 //! use num_fmt_delimited::{FixedLength, FormatWithDelimiter};
